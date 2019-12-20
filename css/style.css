@@ -1,0 +1,73 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.time_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .time_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+}
+
+.time_wrapper .hour, .time_wrapper .minutes, .time_wrapper .seconds {
+  width: 200px;
+  height: 170px;
+  background: #622;
+  border: none;
+  margin: 5px;
+  padding-top: 50px;
+  color: white;
+  -webkit-box-shadow: 2px 1px 50px #321,  1px -3px 10px 2px #fff inset;
+          box-shadow: 2px 1px 50px #321,  1px -3px 10px 2px #fff inset;
+  text-shadow: 1px 1px 1px #2aa;
+  -webkit-box-reflect: below 3px linear-gradient(transparent 30%, #111);
+}
+
+.time_wrapper .hour span, .time_wrapper .minutes span, .time_wrapper .seconds span {
+  display: block;
+  text-align: center;
+}
+
+.time_wrapper .hour span:nth-child(1), .time_wrapper .minutes span:nth-child(1), .time_wrapper .seconds span:nth-child(1) {
+  font-size: 3rem;
+}
+
+.time_wrapper .hour span:nth-child(2), .time_wrapper .minutes span:nth-child(2), .time_wrapper .seconds span:nth-child(2) {
+  font-size: 2rem;
+  padding-top: 20px;
+}
+
+.project {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  background: #da32a3;
+  color: white;
+  font-size: 1.1rem;
+  padding: 8px;
+}
+/*# sourceMappingURL=style.css.map */
